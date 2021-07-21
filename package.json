@@ -1,0 +1,23 @@
+{
+  "name": "poc-api",
+  "version": "1.0.0",
+  "description": "Metodos Http",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thainachavarry/POC-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thainachavarry/POC-API/issues"
+  },
+  "homepage": "https://github.com/thainachavarry/POC-API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
