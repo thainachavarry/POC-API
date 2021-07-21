@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 
@@ -6,9 +7,8 @@ const taskRouter = require('./routes/task')
 const app = express()
 
 const PORT = process.env.PORT ?? 3000
-const MONGO_URL = 'mongodb://thatadoida:fisicas2@cluster0-shard-00-00.1qlty.mongodb.net:27017,cluster0-shard-00-01.1qlty.mongodb.net:27017,cluster0-shard-00-02.1qlty.mongodb.net:27017/apiTasks?ssl=true&replicaSet=atlas-1lc966-shard-0&authSource=admin&retryWrites=true&w=majority'
 
-mongoose.connect(MONGO_URL, {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
