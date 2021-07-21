@@ -36,10 +36,11 @@
 
 ### API REST CRUD TASKS 👀
 
-- [ ] CREATE (POST)
-- [ ] READ   (GET)
-- [ ] UPDATE (PUT)
-- [ ] DELETE (DELETE)
+- [x] CREATE        (POST)
+- [x] READ/getAll   (GET)
+- [ ] READ/getOne   (GET)
+- [ ] UPDATE        (PUT)
+- [ ] DELETE        (DELETE)
 
 ## Firsts steps
 
