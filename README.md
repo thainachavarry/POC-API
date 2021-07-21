@@ -23,7 +23,7 @@
 
 ## Used Tecs
 
-- Express
+- Express: Server behavior
   - `listen` Server init
   - request: What we will send to the server
   - response: What the server will send to us
@@ -44,3 +44,4 @@
 - `npm init -y`  Start a project using npm
 - `npm install express`  install express on project
 - Create a server.js file
+- `npm install mongoose`  install mongoose on project
