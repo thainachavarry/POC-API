@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
-const Task = require('./models/Task')
+const taskRouter = require('./routes/task')
 
 const app = express()
 
@@ -23,10 +23,6 @@ mongoose.connection.on('disconnected', () => {
 
 app.use(express.json())
 
-app.post('/tasks', (request, response) => {
-  Task.create(request.body).then(task => {
-    response.status(201).json(task)
-  })
-})
+app.use(taskRouter)
 
 app.listen(PORT, () => console.log(`🚀 Server running in port ${PORT}`))
