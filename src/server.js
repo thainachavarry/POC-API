@@ -1,6 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
+const Task = require('./models/Task')
+
 const app = express()
 
 const PORT = process.env.PORT ?? 3000
@@ -21,8 +23,10 @@ mongoose.connection.on('disconnected', () => {
 
 app.use(express.json())
 
-app.get('/tasks', (request, response) => {
-  response.status(200).json(request.body)
+app.post('/tasks', (request, response) => {
+  Task.create(request.body).then(task => {
+    response.status(201).json(task)
+  })
 })
 
 app.listen(PORT, () => console.log(`🚀 Server running in port ${PORT}`))

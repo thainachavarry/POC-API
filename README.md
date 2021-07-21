@@ -30,6 +30,8 @@
   - `app.use(express.json())` Now the app know how handle json request
 - Node
 - Banco não relacional: MongoDb (mongoose)
+  - `new mongoose.Schema({})` Create mongo schema
+  - `mongoose.model('Task', TaskSchema)` Create mongo model
 - Ecmascript
 
 ### API REST CRUD TASKS 👀
