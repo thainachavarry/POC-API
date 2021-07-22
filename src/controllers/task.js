@@ -21,6 +21,13 @@ class TaskController {
   async show(request, response) {
     const { id } = request.params
     const task = await Task.findById(id)
+
+    if (!task) {
+      return response.status(404).json({
+        error: 'Task not found'
+      })
+    }
+
     return response.status(200).json(task)
   }
   
@@ -28,6 +35,12 @@ class TaskController {
     const { id } = request.params
 
     const task = await Task.findByIdAndUpdate(id, request.body, { new: true })
+    return response.status(200).json(task)
+  }
+
+  async delete(request, response) {
+    const { id } = request.params
+    const task = await Task.findByIdAndDelete(id)
     return response.status(200).json(task)
   }
 }

@@ -40,7 +40,7 @@
 - [x] READ/getAll   (GET)
 - [x] READ/getOne   (GET)
 - [x] UPDATE        (PUT)
-- [ ] DELETE        (DELETE)
+- [x] DELETE        (DELETE)
 
 ## Firsts steps
 

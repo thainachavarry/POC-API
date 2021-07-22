@@ -8,6 +8,6 @@ taskRouter.post('/tasks', TaskController.create)
 taskRouter.get('/tasks', TaskController.index)
 taskRouter.get('/tasks/:id', TaskController.show)
 taskRouter.put('/tasks/:id', TaskController.update)
-// taskRouter.delete('/tasks', TaskController.delete)
+taskRouter.delete('/tasks/:id', TaskController.delete)
 
 module.exports = taskRouter
