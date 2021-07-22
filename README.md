@@ -39,7 +39,7 @@
 - [x] CREATE        (POST)
 - [x] READ/getAll   (GET)
 - [x] READ/getOne   (GET)
-- [ ] UPDATE        (PUT)
+- [x] UPDATE        (PUT)
 - [ ] DELETE        (DELETE)
 
 ## Firsts steps

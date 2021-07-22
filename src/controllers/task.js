@@ -23,6 +23,13 @@ class TaskController {
     const task = await Task.findById(id)
     return response.status(200).json(task)
   }
+  
+  async update(request, response) {
+    const { id } = request.params
+
+    const task = await Task.findByIdAndUpdate(id, request.body, { new: true })
+    return response.status(200).json(task)
+  }
 }
 
 module.exports = new TaskController()
