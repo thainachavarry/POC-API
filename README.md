@@ -44,7 +44,7 @@
 
 ## Firsts steps
 
-- `npm init -y`  Start a project using npm
-- `npm install express`  install express on project
+- `npm init -y` Start a project using npm
+- `npm install express` install express on project
 - Create a server.js file
-- `npm install mongoose`  install mongoose on project
+- `npm install mongoose` install mongoose on project
