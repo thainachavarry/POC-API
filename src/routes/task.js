@@ -6,7 +6,7 @@ const taskRouter = express.Router()
 
 taskRouter.post('/tasks', TaskController.create)
 taskRouter.get('/tasks', TaskController.index)
-// taskRouter.get('/tasks/:id', TaskController.show)
+taskRouter.get('/tasks/:id', TaskController.show)
 // taskRouter.put('/tasks', TaskController.update)
 // taskRouter.delete('/tasks', TaskController.delete)
 

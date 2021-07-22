@@ -38,7 +38,7 @@
 
 - [x] CREATE        (POST)
 - [x] READ/getAll   (GET)
-- [ ] READ/getOne   (GET)
+- [x] READ/getOne   (GET)
 - [ ] UPDATE        (PUT)
 - [ ] DELETE        (DELETE)
 
